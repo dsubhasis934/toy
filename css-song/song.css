@@ -1,0 +1,61 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background:url(../media/audio-player.png);
+    background-position:center;
+    background-size:cover;
+    background-attachment:fixed;
+    height:100vh;
+    background-blend-mode:darken;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    margin: auto;
+    width: 98%;
+}
+.logo{
+    width: 111px;
+    border: 1px solid whitesmoke;
+    border-radius: 64px;
+}
+.options li{
+    list-style-type:none;
+    display:inline-block;
+    margin-top:22px;
+}
+.options li a{
+    text-decoration: none;
+    padding: 27px;
+    color: black;
+    font-size: 20px;
+}
+.content{
+    width: 35%;
+    position: absolute;
+    top: 45%;
+}
+.left-content{
+    font-size: 14px;
+    margin-left:6px;
+    float:left;
+}
+.right-content{
+    float:right;
+    margin-right: -148%;
+}
+.right-content p{
+    font-size: 30px;
+    margin-right: -6%;
+}
+.right-content img{
+    max-width: 47px;
+    float: right;
+    margin-right: -55px;
+    margin-top: -39px;
+    border-radius: 29px;
+    cursor:pointer;
+}

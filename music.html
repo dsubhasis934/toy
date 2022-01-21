@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relaxing audio player</title>
+    <link rel="stylesheet" href="css-song/song.css" class="stylesheet">
+</head>
+<body>
+<nav class="navbar">
+        <div class="icon">
+            <img src="media/icons.png" alt="icon-image" class="logo">
+        </div>
+        <ul class="options">
+        <li><a href="#">home</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">specification</a></li>
+        <li><a href="#">products</a></li>
+        <li><a href="#">connect</a></li>
+    </ul>   
+</nav>
+<div class="content">
+    <div class="left-content">
+    <h1>click the play icon for relief your stress</h1>
+    </div>
+    <div class="right-content">
+        <p><b>click here to listen</b></p>
+        <img src="media/play.jpg" alt="play-button" id="icon">
+    </div>
+</div>
+<audio id="mysong">
+    <source src="media/Do Kinaare JalRaj Official Audio Latest Hindi Song 2020 Original.mp3" text="Audio/mp3">
+</audio>
+<script>
+    let mysong=document.getElementById("mysong");
+    let icon=document.getElementById("icon");
+    icon.onclick=function(){
+        if(mysong.paused){
+            mysong.play();
+            icon.src="media/pause.jpg";
+        }
+        else{
+        mysong.paused();
+        icon.src="media/play.jpg";
+    }
+}
+</script>
+</body>
+</html>
